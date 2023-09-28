@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right,blue,indigo,violet);
+}
+
+.container__box {
+    background-image: linear-gradient(to bottom, #FFCE00, #F7A800);
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.input:focus {
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+}
