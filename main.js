@@ -5,10 +5,10 @@ const inputs = document.getElementsByClassName("input");
 const btnSubmit = document.getElementById("btnSubmit");
 const inputValue = document.querySelector("#InputValue");
 
-const clearForm = function () {
+const clearForm = () => {
     inputValue.value ="";
 }
-const convertIt = function() {
+const convertIt = () => {
     //get the user enteres value
     let kmValue = parseFloat(inputValue.value);
 
@@ -25,7 +25,7 @@ const convertIt = function() {
 }
 
 
-const convertToKm = function(kmValue) {
+const convertToKm = (kmValue) => {
     let milesValue = 0;
     milesValue = (kmValue * .6124)
     return milesValue;
@@ -36,7 +36,7 @@ btnSubmit.addEventListener("click", convertIt);
 for (let i = 0; i < inputs.length; i++) {
     let input = inputs[i];
 
-    input.addEventListener("input", function (e) {
+    input.addEventListener("input", (e) => {
         let value = parseFloat(e.target.value);
         
         switch (e.target.name) {
